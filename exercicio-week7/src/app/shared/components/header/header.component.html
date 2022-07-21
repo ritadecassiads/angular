@@ -1,0 +1,10 @@
+<ul>
+    <li [routerLink]="['/home']">Home</li>
+    <li 
+    *ngIf="user"
+    (click)="exit()"
+    >Sair</li>
+    <li (click)="navigateByUrl('login')"
+    *ngIf="!user"
+    >Login</li>    
+</ul>
